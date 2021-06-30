@@ -1,4 +1,4 @@
-# Funções Úteis para formatação BRASIL
+# Funções Úteis para formatação no padrão BRASILEIRO
 
 ## Instalando
 ```shell
@@ -7,7 +7,7 @@ npm i brazuka-formatter
 
 ## Utilizando
 ```js
-const {formatCEP, formatMoney} = require('brazuka-formatter')
+const {formatCEP, formatMoney, formatCPF, formatCNPJ} = require('brazuka-formatter')
 ```
 
 #### formatMoney(value, symbol):
