@@ -11,7 +11,7 @@ const {formatCEP, formatMoney} = require('brazuka-formatter')
 ```
 
 #### formatCEP(value): 
-		Essa função irá formatar um CEP - O value pode ser do tipo int ou string
+Essa função irá formatar um CEP - O value pode ser do tipo int ou string
 
 ```js
 //Exemplo da formatação de CEP
@@ -24,7 +24,7 @@ console.log(formatCEP("12345678"))
 ```
 
 #### formatMoney(value, symbol):
-		Essa função irá formatar o dinheiro para o padrão Brasileiro, podendo retornar com o símbolo R$ ou não atráves de true ou false.  
+Essa função irá formatar o dinheiro para o padrão Brasileiro, podendo retornar com o símbolo R$ ou não atráves de true ou false.  
 
 ```js
 //Exemplo da formatação de Dinheiro
@@ -41,7 +41,7 @@ R$ 1.958,66
 //Exemplo 2 - Sem o Simbolo R$
 console.log(formatMoney(1958.66))
 
-//Resultado 1
+//Resultado 2
 1.958,66
 ```
 
