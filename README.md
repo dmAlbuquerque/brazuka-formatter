@@ -96,7 +96,7 @@ Essa função vai retornar o Telefone no formato (88) 9 1234-4321
 - O parâmetro value deve ser do tipo string
 
 ```js
-//Exemplo da formatação de PIS/PASEP
+//Exemplo da formatação de Telefone
 const {formatTelefone} = require('brazuka-formatter')
 
 formatTelefone("88912344321") // result -> (88) 9 1234-4321
