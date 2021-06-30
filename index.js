@@ -1,20 +1,4 @@
 /**
- * Esta função vai retornar o CEP no formato 12345-678
- * 
- * @example
- * 	formatCEP(12345678) ou formatCEP("12345678")
- * 
- * @param {value} obrigatorio Tipo Int ou String
- * 
- */
-function formatCEP(value) {
-	return String(value)
-		.replace(/\D/g, "")
-		.slice(0, 8)
-		.replace(/(\d{5})(\d)/, "$1-$2")
-}
-
-/**
  * Esta função vai retornar o Dinheiro no padrão Brasileiro, com ou sem símbolo
  *
  * @example 1 - Com Simbolo R$
@@ -38,6 +22,22 @@ function formatMoney(value, symbol) {
 		//sem R$
 		return value.toLocaleString('pt-br', { minimumFractionDigits: 2 });
 	}
+}
+
+/**
+ * Esta função vai retornar o CEP no formato 12345-678
+ * 
+ * @example
+ * 	formatCEP(12345678) ou formatCEP("12345678")
+ * 
+ * @param {value} obrigatorio Tipo Int ou String
+ * 
+ */
+function formatCEP(value) {
+	return String(value)
+		.replace(/\D/g, "")
+		.slice(0, 8)
+		.replace(/(\d{5})(\d)/, "$1-$2")
 }
 
 /**

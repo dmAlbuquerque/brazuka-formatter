@@ -73,4 +73,4 @@ console.log(formatCNPJ("12345678000109"))
 
 ### Em breve
 Em breve será adicionado novas funções para complementar o pacote:
-- Formatação de Data
+- Data      | 22/07/2025
