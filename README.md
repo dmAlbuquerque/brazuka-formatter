@@ -1,9 +1,11 @@
 # Funções Úteis para formatação BRASIL
 
+## Instalando
 ```shell
 npm i brazuka-formatter
 ```
 
+## Utilizando
 ```js
 const {formatCEP} = require('brazuka-formatter')
 ```
