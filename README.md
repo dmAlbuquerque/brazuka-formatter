@@ -1,4 +1,4 @@
-# Funções Úteis para formatação no padrão BRASILEIRO
+# Funções úteis para formatação no padrão BRASILEIRO
 
 ## Instalando
 ```shell
