@@ -1,0 +1,29 @@
+{
+  "name": "brazuka-formatter",
+  "version": "1.0.0",
+  "description": "Este pacote tem o intuito de facilitar aos Devs a formaterem dados de acordo com o padrão Brasileiro, como CEP, CPF, CNPJ entre outros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmAlbuquerque/brazuka-formatter.git"
+  },
+  "keywords": [
+    "brasil",
+    "formatação",
+    "formatter",
+    "utils",
+    "money",
+    "cpf",
+    "cnpj",
+    "cep"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmAlbuquerque/brazuka-formatter/issues"
+  },
+  "homepage": "https://github.com/dmAlbuquerque/brazuka-formatter#readme"
+}
