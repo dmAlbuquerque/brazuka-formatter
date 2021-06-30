@@ -16,7 +16,7 @@ yarn add brazuka-formatter
 //importando
 var brazuka = require('brazuka-formatter')
 
-//Exemplo de utilização uma função
+//Exemplo de utilização de uma função
 brazuka.formatCep("12345678")
 ```
 
@@ -41,10 +41,8 @@ const {formatMoney} = require('brazuka-formatter')
 //Exemplo 1 - Com o Simbolo R$
 formatMoney(1958.66, true) //result -> R$ 1.958,66
 
-//------------------------
-
 //Exemplo 2 - Sem o Simbolo R$
-console.log(formatMoney(1958.66)) // result -> 1.958,66
+formatMoney(1958.66) // result -> 1.958,66
 ```
 
 #### formatCep(value): 
