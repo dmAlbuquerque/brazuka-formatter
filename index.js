@@ -29,9 +29,10 @@ function formatCEP(value) {
  */
 function formatMoney(value, symbol) {
 
-	symbol = (symbol !== undefined) ? true : false;
+	symbol = (symbol == undefined || symbol == false) ? false : true;
+	console.log("O simbol tem o valor de --> " + symbol);
 
-	if (symbol) {
+	if (symbol == true) {
 		//com R$
 		return value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 	} else {
@@ -39,6 +40,8 @@ function formatMoney(value, symbol) {
 		return value.toLocaleString('pt-br', { minimumFractionDigits: 2 });
 	}
 }
+
+console.log(formatMoney(489451681351))
 
 module.exports = {
 	formatCEP,
