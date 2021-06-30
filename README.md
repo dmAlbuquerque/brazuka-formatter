@@ -10,8 +10,24 @@ yarn add brazuka-formatter
 ```
 
 ## Utilizando
+#### Exemplo 1 de importação
+- Você pode utilizar uma variável para ter acesso a todas funções, como o exemplo abaixo:
 ```js
-const {formatCEP, formatMoney, formatCpf, formatCnpj, formatPisPasep} = require('brazuka-formatter')
+//importando
+var brazuka = require('brazuka-formatter')
+
+//Exemplo de utilização uma função
+brazuka.formatCep("12345678")
+```
+
+#### Exemplo 2 de importação
+- Você pode setar apenas as funções que deseja utilizar, como o exemplo abaixo:
+```js
+//Importando apenas duas funções
+const {formatCep, formatCpf} = require('brazuka-formatter')
+
+//Exemplo de utilização de uma função
+formatCep("12345678")
 ```
 
 #### formatMoney(value, symbol):
@@ -39,7 +55,7 @@ Essa função vai retornar o CEP no formato 12345-678
 //Exemplo da formatação de CEP
 const {formatCep} = require('brazuka-formatter')
 
-console.log(formatCep("12345678")) // result -> 12345-678
+formatCep("12345678") // result -> 12345-678
 ```
 
 #### formatCpf(value): 
@@ -63,7 +79,7 @@ Essa função vai retornar o CNPJ no formato 12.345.678/0001-09
 //Exemplo da formatação de CNPJ
 const {formatCnpj} = require('brazuka-formatter')
 
-console.log(formatCnpj("12345678000109")) // result -> 12.345.678/0001-09
+formatCnpj("12345678000109") // result -> 12.345.678/0001-09
 ```
 
 #### formatPisPasep(value): 
@@ -74,7 +90,7 @@ Essa função vai retornar o PIS/PASEP no formato 123.23129.49-1
 //Exemplo da formatação de PIS/PASEP
 const {formatPisPasep} = require('brazuka-formatter')
 
-console.log(formatPisPasep("12323129491")) // result -> 123.23129.49-1
+formatPisPasep("12323129491") // result -> 123.23129.49-1
 ```
 
 ### Em breve
