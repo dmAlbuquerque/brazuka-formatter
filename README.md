@@ -91,6 +91,17 @@ const {formatPisPasep} = require('brazuka-formatter')
 formatPisPasep("12323129491") // result -> 123.23129.49-1
 ```
 
+#### formatTelefone(value): 
+Essa função vai retornar o Telefone no formato (88) 9 1234-4321
+- O parâmetro value deve ser do tipo string
+
+```js
+//Exemplo da formatação de PIS/PASEP
+const {formatTelefone} = require('brazuka-formatter')
+
+formatTelefone("88912344321") // result -> (88) 9 1234-4321
+```
+
 ### Em breve
 Em breve será adicionado novas funções para complementar o pacote:
 - Data

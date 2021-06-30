@@ -84,8 +84,24 @@ function formatCnpj(value) {
 function formatPisPasep(value) {
 	return String(value)
 		.replace(/\D/g, "")
-		.slice(0, 14)
+		.slice(0, 11)
 		.replace(/(\d{3})(\d{5})(\d{2})(\d{1})/, "$1.$2.$3-$4")
+}
+
+/**
+ * Esta função vai retornar o Telefone no formato (88) 9 1234-4321
+ *
+ * @example
+ * 	formatTelefone("88912344321")
+ *
+ * @param {value} obrigatorio Tipo String
+ *
+ */
+function formatTelefone(value) {
+	return String(value)
+		.replace(/\D/g, "")
+		.slice(0, 11)
+		.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, "($1) $2 $3-$4")
 }
 
 /* Testes */
@@ -95,13 +111,14 @@ function formatPisPasep(value) {
 // console.log("CPF             --> " + formatCpf("12345678909"));
 // console.log("CNPJ            --> " + formatCnpj("12345678000109"));
 // console.log("PIS/PASEP       --> " + formatPisPasep("12323129491"))
-
+//console.log("TELEFONE --> " + formatTelefone("88912344321"))
 
 module.exports = {
 	formatMoney,
 	formatCep,
 	formatCpf,
 	formatCnpj,
-	formatPisPasep
+	formatPisPasep,
+	formatTelefone
 }
 
