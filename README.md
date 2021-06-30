@@ -1,5 +1,8 @@
 # Funções úteis para formatação no padrão BRASILEIRO
 
+## Sobre o projeto
+O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca completa de formatação de documentos no padrão Brasileiro.
+
 ## Instalando
 ```shell
 npm i brazuka-formatter
@@ -106,3 +109,9 @@ formatTelefone("88912344321") // result -> (88) 9 1234-4321
 Em breve será adicionado novas funções para complementar o pacote:
 - Data
 - Outros documentos Brasileiros
+
+## Contribuição
+As contribuições tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+
+## License
+Distribuido sob a licença [MIT](License).
