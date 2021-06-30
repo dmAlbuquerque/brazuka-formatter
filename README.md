@@ -33,7 +33,7 @@ const {formatCep, formatCpf} = require('brazuka-formatter')
 formatCep("12345678")
 ```
 
-#### formatMoney(value, symbol):
+## formatMoney( value, symbol ):
 Essa função irá formatar o dinheiro para o padrão Brasileiro, podendo retornar com o símbolo "R$" (através do parâmetro symbol). 
 - O parâmetro symbol (opcional), pode ser passado como true ou false. Por padrão é false 
 
@@ -48,7 +48,7 @@ formatMoney(1958.66, true) //result -> R$ 1.958,66
 formatMoney(1958.66) // result -> 1.958,66
 ```
 
-#### formatCep(value): 
+## formatCep( value ): 
 Essa função vai retornar o CEP no formato 12345-678 
 - O parâmetro value deve ser do tipo string
 
@@ -59,7 +59,7 @@ const {formatCep} = require('brazuka-formatter')
 formatCep("12345678") // result -> 12345-678
 ```
 
-#### formatCpf(value): 
+## formatCpf( value ): 
 Essa função vai retornar o CPF no formato 123.456.789-09 
 - O parâmetro value deve ser do tipo string
 
@@ -72,7 +72,7 @@ formatCpf("1234567809") // result -> 123.456.789-09
 
 ```
 
-#### formatCnpj(value): 
+## formatCnpj( value ): 
 Essa função vai retornar o CNPJ no formato 12.345.678/0001-09
 - O parâmetro value deve ser do tipo string
 
@@ -83,7 +83,7 @@ const {formatCnpj} = require('brazuka-formatter')
 formatCnpj("12345678000109") // result -> 12.345.678/0001-09
 ```
 
-#### formatPisPasep(value): 
+## formatPisPasep( value ): 
 Essa função vai retornar o PIS/PASEP no formato 123.23129.49-1
 - O parâmetro value deve ser do tipo string
 
@@ -94,7 +94,7 @@ const {formatPisPasep} = require('brazuka-formatter')
 formatPisPasep("12323129491") // result -> 123.23129.49-1
 ```
 
-#### formatTelefone(value): 
+## formatTelefone( value ): 
 Essa função vai retornar o Telefone no formato (88) 9 1234-4321
 - O parâmetro value deve ser do tipo string
 
@@ -111,7 +111,7 @@ Em breve será adicionado novas funções para complementar o pacote:
 - Outros documentos Brasileiros
 
 ## Contribuição
-As contribuições tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+As contribuições tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito bem-vinda**.
 
 ## License
-Distribuido sob a licença [MIT](License).
+Distribuido sob a licença [MIT](LICENSE).
