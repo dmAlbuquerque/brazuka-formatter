@@ -28,12 +28,12 @@ function formatMoney(value, symbol) {
  * Esta função vai retornar o CEP no formato 12345-678
  * 
  * @example
- * 	formatCEP(12345678) ou formatCEP("12345678")
+ * 	formatCep(12345678) ou formatCEP("12345678")
  * 
  * @param {value} obrigatorio Tipo Int ou String
  * 
  */
-function formatCEP(value) {
+function formatCep(value) {
 	return String(value)
 		.replace(/\D/g, "")
 		.slice(0, 8)
@@ -44,12 +44,12 @@ function formatCEP(value) {
  * Esta função vai retornar o CPF no formato 123.456.789-09
  *
  * @example
- * 	formatCPF("1234567809")
+ * 	formatCpf("1234567809")
  *
  * @param {value} obrigatorio Tipo String
  *
  */
-function formatCPF(value) {
+function formatCpf(value) {
 	return String(value)
 		.replace(/\D/g, "")
 		.slice(0, 11)
@@ -60,22 +60,48 @@ function formatCPF(value) {
  * Esta função vai retornar o CNPJ no formato 12.345.678/0001-09
  *
  * @example
- * 	formatCNPJ("12345678000109")
+ * 	formatCnpj("12345678000109")
  *
  * @param {value} obrigatorio Tipo String
  *
  */
-function formatCNPJ(value) {
+function formatCnpj(value) {
 	return String(value)
 		.replace(/\D/g, "")
 		.slice(0, 14)
 		.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, "$1.$2.$3/$4-$5")
 }
 
+/**
+ * Esta função vai retornar o PIS/PASEP no formato 123.23129.49-1
+ *
+ * @example
+ * 	formatPisPasep("12323129491")
+ *
+ * @param {value} obrigatorio Tipo String
+ *
+ */
+function formatPisPasep(value) {
+	return String(value)
+		.replace(/\D/g, "")
+		.slice(0, 14)
+		.replace(/(\d{3})(\d{5})(\d{2})(\d{1})/, "$1.$2.$3-$4")
+}
+
+/* Testes */
+// console.log("Dinheiro com R$ --> " + formatMoney(1250, true));
+// console.log("Dinheiro sem R$ --> " + formatMoney(1250));
+// console.log("CEP             --> " + formatCep("62340000"));
+// console.log("CPF             --> " + formatCpf("12345678909"));
+// console.log("CNPJ            --> " + formatCnpj("12345678000109"));
+// console.log("PIS/PASEP       --> " + formatPisPasep("12323129491"))
+
+
 module.exports = {
 	formatMoney,
-	formatCEP,
-	formatCPF,
-	formatCNPJ,
+	formatCep,
+	formatCpf,
+	formatCnpj,
+	formatPisPasep
 }
 
