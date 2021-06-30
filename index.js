@@ -17,11 +17,11 @@ function formatCEP(value) {
 /**
  * Esta função vai retornar o Dinheiro no padrão Brasileiro, com ou sem símbolo
  *
- * @example1 - Com Simbolo R$
+ * @example 1 - Com Simbolo R$
  * 	formatMoney(1250.54, true) //R$ 1.250,54
  * 
- * @example2 - Sem Simbolo R$
- * ou formatMoney(1250.54) // 1.250,54
+ * @example 2 - Sem Simbolo R$
+ * 	formatMoney(1250.54) // 1.250,54
  *
  * @param {value} obrigatorio valor a ser formatado - Tipo Int ou Double
  * @param {symbol} opcional   se o retorno vai possuir o símbolo R$ ou não - True or False
@@ -30,7 +30,6 @@ function formatCEP(value) {
 function formatMoney(value, symbol) {
 
 	symbol = (symbol == undefined || symbol == false) ? false : true;
-	console.log("O simbol tem o valor de --> " + symbol);
 
 	if (symbol == true) {
 		//com R$
@@ -40,8 +39,6 @@ function formatMoney(value, symbol) {
 		return value.toLocaleString('pt-br', { minimumFractionDigits: 2 });
 	}
 }
-
-console.log(formatMoney(489451681351))
 
 module.exports = {
 	formatCEP,
