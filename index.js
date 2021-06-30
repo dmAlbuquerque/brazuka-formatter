@@ -73,7 +73,9 @@ function formatCNPJ(value) {
 }
 
 module.exports = {
+	formatMoney,
 	formatCEP,
-	formatMoney
+	formatCPF,
+	formatCNPJ,
 }
 
