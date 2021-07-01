@@ -17,7 +17,7 @@ const renavam = require('../lib/renavam');
 const processosJudiciais = require('../lib/processosJudiciais');
 
 console.log({
-    My_Tests: {
+    Tests: {
         money: {
             moneyWithSymbol: money(1250.55, true),
             moneyWithoutSymbol: money(1250.55),
@@ -56,8 +56,8 @@ console.log({
             renavam_error: renavam("4185448526")
         },
         processos_judiciais: {
-            cns_formatted: processosJudiciais("00420226820217221520"),
-            cns_error: processosJudiciais("004202268202172215")
+            processosJudiciais_formatted: processosJudiciais("00420226820217221520"),
+            processosJudiciais_error: processosJudiciais("004202268202172215")
         }
 
     }

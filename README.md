@@ -5,7 +5,7 @@
 ## Sobre o projeto
 O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca completa de formatação de documentos no padrão Brasileiro.
 
-Confira abaixo as funções disponíveis para formatação.
+Confira abaixo a **Documentação** completa de como **_instalar_**, **_importar_** e **_utilizar_** as funções disponíveis para formatação.
 
 <br>
 
