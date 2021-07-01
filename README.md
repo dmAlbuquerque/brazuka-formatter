@@ -5,11 +5,11 @@ O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca com
 
 ## Instalando
 ```shell
-npm i brazuka-formatter
+npm i brazuka-format
 ```
 ou
 ```shell
-yarn add brazuka-formatter
+yarn add brazuka-format
 ```
 
 ## Utilizando
@@ -17,7 +17,7 @@ yarn add brazuka-formatter
 - Você pode utilizar uma variável para ter acesso a todas funções, como o exemplo abaixo:
 ```js
 //importando
-var brazuka = require('brazuka-formatter')
+var brazuka = require('brazuka-format')
 
 //Exemplo de utilização de uma função
 brazuka.formatCep("12345678")
@@ -27,7 +27,7 @@ brazuka.formatCep("12345678")
 - Você pode setar apenas as funções que deseja utilizar, como o exemplo abaixo:
 ```js
 //Importando apenas duas funções
-const {formatCep, formatCpf} = require('brazuka-formatter')
+const {formatCep, formatCpf} = require('brazuka-format')
 
 //Exemplo de utilização de uma função
 formatCep("12345678")
@@ -39,7 +39,7 @@ Essa função irá formatar o dinheiro para o padrão Brasileiro, podendo retorn
 
 ```js
 //Exemplo da formatação de Dinheiro
-const {formatMoney} = require('brazuka-formatter')
+const {formatMoney} = require('brazuka-format')
 
 //Exemplo 1 - Com o Simbolo R$
 formatMoney(1958.66, true) //result -> R$ 1.958,66
@@ -54,7 +54,7 @@ Essa função vai retornar o CEP no formato 12345-678
 
 ```js
 //Exemplo da formatação de CEP
-const {formatCep} = require('brazuka-formatter')
+const {formatCep} = require('brazuka-format')
 
 formatCep("12345678") // result -> 12345-678
 ```
@@ -66,7 +66,7 @@ Essa função vai retornar o CPF no formato 123.456.789-09
 
 ```js
 //Exemplo da formatação de CPF
-const {formatCpf} = require('brazuka-formatter')
+const {formatCpf} = require('brazuka-format')
 
 formatCpf("1234567809") // result -> 123.456.789-09 
 
@@ -78,7 +78,7 @@ Essa função vai retornar o CNPJ no formato 12.345.678/0001-09
 
 ```js
 //Exemplo da formatação de CNPJ
-const {formatCnpj} = require('brazuka-formatter')
+const {formatCnpj} = require('brazuka-format')
 
 formatCnpj("12345678000109") // result -> 12.345.678/0001-09
 ```
@@ -89,7 +89,7 @@ Essa função vai retornar o PIS/PASEP no formato 123.23129.49-1
 
 ```js
 //Exemplo da formatação de PIS/PASEP
-const {formatPisPasep} = require('brazuka-formatter')
+const {formatPisPasep} = require('brazuka-format')
 
 formatPisPasep("12323129491") // result -> 123.23129.49-1
 ```
@@ -100,7 +100,7 @@ Essa função vai retornar o Telefone no formato (88) 9 1234-4321
 
 ```js
 //Exemplo da formatação de Telefone
-const {formatTelefone} = require('brazuka-formatter')
+const {formatTelefone} = require('brazuka-format')
 
 formatTelefone("88912344321") // result -> (88) 9 1234-4321
 ```
