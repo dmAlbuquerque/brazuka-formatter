@@ -1,6 +1,6 @@
 {
-  "name": "brazuka-format",
-  "version": "1.0.1",
+  "name": "brazuka-formatter",
+  "version": "0.0.1",
   "description": "Este pacote tem o intuito de facilitar a vida dos Devs com a formatação de dados de acordo com o padrão Brasileiro, como CEP, CPF, CNPJ entre outros documentos Brasileiros.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,11 @@
     "cep",
     "pis",
     "pasep",
-    "brazuka"
+    "brazuka",
+    "cns",
+    "renavam",
+    "processos-judiciais",
+    "padrão-brasileiro"
   ],
   "author": "Daniel Albuquerque",
   "license": "MIT",
