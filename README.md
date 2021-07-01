@@ -1,4 +1,4 @@
-# Funções úteis para formatação no padrão BRASILEIRO
+# Funções para formatação no padrão BRASILEIRO
 
 ## Sobre o projeto
 O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca completa de formatação de documentos no padrão Brasileiro.
