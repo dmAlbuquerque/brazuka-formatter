@@ -1,19 +1,16 @@
 # Funções para formatação de Documentos no padrão BRASILEIRO
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) 
 ![Issues](https://img.shields.io/github/issues/dmAlbuquerque/brazuka-formatter) 
 
-## Sobre o projeto
+# Sobre o projeto
 O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca completa de formatação de documentos no padrão Brasileiro.
 
 Confira abaixo a **Documentação** completa de como **_instalar_**, **_importar_** e **_utilizar_** as funções disponíveis para formatação.
 
 <br>
 
-## Instalando
-
-<br>
+# Instalando
 
 ```shell
 npm i brazuka-formatter
@@ -25,9 +22,8 @@ yarn add brazuka-formatter
 ```
 <br>
 
-## Importando
+# Importando
 
-<br>
 
 ### Exemplo 1 de importação
 - Você pode utilizar uma variável para ter acesso a todas funções, como o exemplo abaixo:
@@ -52,8 +48,6 @@ formatCep("12345678")
 <br>
 
 # Utilização dos Métodos
-
-<br>
 
 ## formatMoney( value, symbol ):
 Essa função irá formatar o dinheiro para o padrão Brasileiro, podendo retornar com o símbolo "R$" (através do parâmetro symbol). 
