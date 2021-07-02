@@ -26,7 +26,7 @@ yarn add brazuka-formatter
 
 
 ### Exemplo 1 de importação
-- Você pode utilizar uma variável para ter acesso a todas funções, como o exemplo abaixo:
+- Você pode utilizar uma variável para ter acesso a todas as funções, como o exemplo abaixo:
 ```js
 //importando
 var brazuka = require('brazuka-formatter')
@@ -198,3 +198,4 @@ As contribuições tornam a comunidade de código aberto um lugar incrível para
 
 ## ✔️ License
 Distribuido sob a licença [MIT](LICENSE). © Daniel Albuquerque
+
