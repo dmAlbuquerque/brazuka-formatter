@@ -184,6 +184,23 @@ formatProcessosJudiciais("00420226820217221520") // result -> 0042022.68.2021.7.
 
 <br>
 
+
+## validateCpf( value ): 
+Essa função irá verificar se o CPF informado é válido.
+- O parâmetro value deve ser do tipo string
+
+
+```js
+//Exemplo da formatação de CPF
+const {validateCpf} = require('brazuka-formatter')
+
+validateCpf("1234567809") // result -> false
+validateCpf("95018158034") // result -> true
+
+```
+
+<br>
+
 ## 🛠️ Em breve 🛠️
 Em breve será adicionado novas funções para complementar o pacote:
 - Data
