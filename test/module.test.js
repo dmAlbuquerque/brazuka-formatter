@@ -15,6 +15,7 @@ const inscricaoEstadual = require('../lib/inscricaoEstadual');
 const cns = require('../lib/cns');
 const renavam = require('../lib/renavam');
 const processosJudiciais = require('../lib/processosJudiciais');
+const validateCpf = require('../lib/validateCpf');
 
 console.log({
     Tests: {
@@ -58,6 +59,10 @@ console.log({
         processos_judiciais: {
             processosJudiciais_formatted: processosJudiciais("00420226820217221520"),
             processosJudiciais_error: processosJudiciais("004202268202172215")
+        },
+        validateCpf: {
+            validateCpf: validateCpf("95018158034"),
+            validateCpf_error: validateCpf("9501158034")
         }
 
     }
