@@ -3,6 +3,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 ![Issues](https://img.shields.io/github/issues/dmAlbuquerque/brazuka-formatter)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 # Sobre o projeto
 O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca completa de formatação de documentos no padrão Brasileiro.
@@ -182,6 +183,30 @@ const {formatProcessosJudiciais} = require('brazuka-formatter')
 
 formatProcessosJudiciais("00420226820217221520") // result -> 0042022.68.2021.7.22.1520
 ```
+
+<br>
+
+## formatHtmlToZap( value ):
+Essa função vai retornar o texto com tags html convertido para tags do WhatsApp
+- O parâmetro value deve ser do tipo string 
+
+<br>
+
+### Conversões de tags disponíveis
+- Negrito: < b > ou < strong > para *
+- Itálico: < i > para _
+- Sublinhado: < u > para ~
+- Monoespaçados: < tt > para ```
+
+```js
+const {formatHtmlToZap} = require('brazuka-formatter')
+
+var message = "<i>Eu amo </i><b>Café</b>"
+formatHtmlToZap( message ) 
+//results _Eu amo_ *Café*
+```
+
+
 
 <br>
 

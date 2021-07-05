@@ -15,6 +15,7 @@ const inscricaoEstadual = require('../lib/inscricaoEstadual');
 const cns = require('../lib/cns');
 const renavam = require('../lib/renavam');
 const processosJudiciais = require('../lib/processosJudiciais');
+const htmlToZap = require('../lib/htmlToZap');
 
 console.log({
     Tests: {
@@ -58,6 +59,9 @@ console.log({
         processos_judiciais: {
             processosJudiciais_formatted: processosJudiciais("00420226820217221520"),
             processosJudiciais_error: processosJudiciais("004202268202172215")
+        },
+        htmlToZap: {
+            mensagem_formatted: htmlToZap("<b>    TEXTO EM NEGRITO          </b><br> lorem ipsum é meu texto preferido e eu amo café")
         }
 
     }
