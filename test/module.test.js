@@ -61,7 +61,7 @@ console.log({
             processosJudiciais_error: processosJudiciais("004202268202172215")
         },
         htmlToZap: {
-            mensagem_formatted: htmlToZap("<b>    TEXTO EM NEGRITO          </b><br> lorem ipsum é meu texto preferido e eu amo café")
+            mensagem_formatted: htmlToZap("<b>    TEXTO EM NEGRITO          </b><br> lorem ipsum é meu texto preferido, e eu <b>amo café</b>")
         }
 
     }
