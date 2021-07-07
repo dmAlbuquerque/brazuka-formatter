@@ -206,6 +206,41 @@ formatHtmlToZap( message )
 //results _Eu amo_ *Café*
 ```
 
+<br>
+
+## formatReplace( value, search, replace ):
+Essa função vai retornar o texto com a nova substituição de caracteres de acordo com os parâmetros passados.
+- O parâmetro value deve ser do tipo string 
+- O parâmetro search pode ser do tipo string ou array
+- O parâmetro replace pode ser do tipo string ou array
+
+<blockquote><b>Obs.:</b> Caso deseje passar o parâmetro <i>search</i> e <i>replace</i> como array, os dois parâmetros devem possuir a mesma quantidade de elementos.</blockquote>
+
+<br>
+
+### Substituição Simples
+```js
+const {formatReplace} = require('brazuka-formatter')
+
+var message = "Meu nome é João" //mensagem
+var search  = "João" //valor a ser procurado
+var replace = "Daniel" //novo valor que vai substituir o 'search'
+formatReplace( message, search, replace ) 
+//results Meu nome é Daniel
+```
+
+<br>
+
+### Substituição Multipla
+```js
+const {formatReplace} = require('brazuka-formatter')
+
+var message = "João, Maria e José são programadores e amam chocolate" //mensagem
+var search  = ["João", "Maria", "José", "chocolate"] //valor a ser procurado
+var replace = ["Daniel", "Macley", "Fernando", "café"] //novo valor que vai substituir o 'search'
+formatReplace( message, search, replace ) 
+//results Daniel, Macley e Fernando são programadores e amam café
+```
 
 
 <br>

@@ -16,6 +16,7 @@ const cns = require('../lib/cns');
 const renavam = require('../lib/renavam');
 const processosJudiciais = require('../lib/processosJudiciais');
 const htmlToZap = require('../lib/htmlToZap');
+const replace = require('../lib/replace');
 
 console.log({
     Tests: {
@@ -62,6 +63,11 @@ console.log({
         },
         htmlToZap: {
             mensagem_formatted: htmlToZap("<b>    TEXTO EM NEGRITO          </b><br> lorem ipsum é meu texto preferido, e eu <b>amo café</b>")
+        },
+        replace: {
+            mensagem_formatted_one_element: replace('Meu nome é João', 'João', 'Daniel'),
+            mensagem_formatted_much_element: replace('João, Maria e José são programadores e amam chocolate', ['João', 'Maria', 'José', 'chocolate'], ['Daniel', 'Macley', 'Fernando', 'café']),
+            mensagem_formatted_much_element_error: replace('João, Mária e José são programadores e amam chocolate', ['João', 'Maria', 'chocolate'], ['Daniel', 'Macley', 'Fernando', 'café'])
         }
 
     }
