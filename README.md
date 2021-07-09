@@ -1,7 +1,9 @@
 # Funções para formatação de Documentos no padrão BRASILEIRO
- 
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 ![Issues](https://img.shields.io/github/issues/dmAlbuquerque/brazuka-formatter)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 # Sobre o projeto
 O objetivo do projeto é facilitar a vida dos Devs fornecendo uma biblioteca completa de formatação de documentos no padrão Brasileiro.
@@ -184,7 +186,6 @@ formatProcessosJudiciais("00420226820217221520") // result -> 0042022.68.2021.7.
 
 <br>
 
-
 ## validateCpf( value ): 
 Essa função irá verificar se o CPF informado é válido.
 - O parâmetro value deve ser do tipo string
@@ -197,6 +198,63 @@ const {validateCpf} = require('brazuka-formatter')
 validateCpf("1234567809") // result -> false
 validateCpf("95018158034") // result -> true
 
+```
+<br>
+
+## formatHtmlToZap( value ):
+Essa função vai retornar o texto com tags html convertido para tags do WhatsApp
+- O parâmetro value deve ser do tipo string 
+
+<br>
+
+### Conversões de tags disponíveis
+- Negrito: < b > ou < strong > para *
+- Itálico: < i > para _
+- Sublinhado: < u > para ~
+- Monoespaçados: < tt > para ```
+
+```js
+const {formatHtmlToZap} = require('brazuka-formatter')
+
+var message = "<i>Eu amo </i><b>Café</b>"
+formatHtmlToZap( message ) 
+//results _Eu amo_ *Café*
+```
+
+<br>
+
+## formatReplace( value, search, replace ):
+Essa função vai retornar o texto com a nova substituição de caracteres de acordo com os parâmetros passados.
+- O parâmetro value deve ser do tipo string 
+- O parâmetro search pode ser do tipo string ou array
+- O parâmetro replace pode ser do tipo string ou array
+
+<blockquote><b>Obs.:</b> Caso deseje passar o parâmetro <i>search</i> e <i>replace</i> como array, os dois parâmetros devem possuir a mesma quantidade de elementos.</blockquote>
+
+<br>
+
+### Substituição Simples
+```js
+const {formatReplace} = require('brazuka-formatter')
+
+var message = "Meu nome é João" //mensagem
+var search  = "João" //valor a ser procurado
+var replace = "Daniel" //novo valor que vai substituir o 'search'
+formatReplace( message, search, replace ) 
+//results Meu nome é Daniel
+```
+
+<br>
+
+### Substituição Multipla
+```js
+const {formatReplace} = require('brazuka-formatter')
+
+var message = "João, Maria e José são programadores e amam chocolate" //mensagem
+var search  = ["João", "Maria", "José", "chocolate"] //valor a ser procurado
+var replace = ["Daniel", "Macley", "Fernando", "café"] //novo valor que vai substituir o 'search'
+formatReplace( message, search, replace ) 
+//results Daniel, Macley e Fernando são programadores e amam café
 ```
 
 <br>
