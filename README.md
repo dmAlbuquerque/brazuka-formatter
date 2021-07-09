@@ -186,6 +186,21 @@ formatProcessosJudiciais("00420226820217221520") // result -> 0042022.68.2021.7.
 
 <br>
 
+## validateCpf( value ): 
+Essa função irá verificar se o CPF informado é válido.
+- O parâmetro value deve ser do tipo string
+
+
+```js
+//Exemplo da formatação de CPF
+const {validateCpf} = require('brazuka-formatter')
+
+validateCpf("1234567809") // result -> false
+validateCpf("95018158034") // result -> true
+
+```
+<br>
+
 ## formatHtmlToZap( value ):
 Essa função vai retornar o texto com tags html convertido para tags do WhatsApp
 - O parâmetro value deve ser do tipo string 
@@ -241,7 +256,6 @@ var replace = ["Daniel", "Macley", "Fernando", "café"] //novo valor que vai sub
 formatReplace( message, search, replace ) 
 //results Daniel, Macley e Fernando são programadores e amam café
 ```
-
 
 <br>
 

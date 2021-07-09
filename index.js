@@ -1,6 +1,7 @@
 module.exports.formatMoney = require('./lib/money')
 module.exports.formatCep = require('./lib/cep')
 module.exports.formatCpf = require('./lib/cpf')
+module.exports.validateCpf = require('./lib/validateCpf')
 module.exports.formatCnpj = require('./lib/cnpj')
 module.exports.formatPisPasep = require('./lib/pispasep')
 module.exports.formatTelefone = require('./lib/telefone')
